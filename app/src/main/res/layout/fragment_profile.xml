@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Image section -->
+    <ImageView
+        android:id="@+id/pProfileImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/baseline_add_a_photo_24" />
+
+    <!-- Name and pUsername -->
+    <TextView
+        android:id="@+id/pFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Nmae"
+        android:textColor="@color/tint"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@id/pProfileImage"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/pUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pUsername"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/pProfileImage"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- pEmail -->
+
+    <!-- pAbout -->
+    <TextView
+        android:id="@+id/pEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pUsername"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="pEmail@example.com"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pAbout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="pAbout user..."
+        android:textSize="16sp"
+        android:layout_below="@id/pEmail"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/ediProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_below="@+id/pAbout"
+        />
+
+
+    <!-- Recycler View for Posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ediProfileButton"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+</RelativeLayout>

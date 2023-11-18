@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#77A1B5"> <!-- Background color applied -->
+
+    <!-- App Name -->
+    <ImageView
+        android:id="@+id/textAppName"
+        android:layout_width="235dp"
+        android:layout_height="97dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logobgrm"
+        android:text="Campus Buzz"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/editTextEmailL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAppName"
+        android:layout_marginTop="32dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"/> <!-- Use rounded_edittext_background or any custom drawable with rounded corners -->
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/editTextPasswordL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmailL"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"/> <!-- Use same rounded background style -->
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/editTextPasswordL"
+        android:layout_marginTop="32dp"
+        android:background="#022434"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+    <!-- Go to Signup Button -->
+    <Button
+        android:id="@+id/buttonGoToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/buttonLogin"
+        android:background="#022434"
+        android:text="Go to Signup"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
